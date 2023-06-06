@@ -1,0 +1,387 @@
+section{
+  padding: 15px;
+}
+header {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  grid-area: h;
+}
+article{
+  height: 300px;
+  width: 70vw;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.descripccion{
+  color: black;
+  letter-spacing: 1.5px;
+  font-family: monospace;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 90vw;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 50x;
+  background: rgb(255, 255, 255,0.4);
+  border: 3px solid #000000;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.9), -20px -20px 20px rgba(0, 0, 0, 0.9); /* dos primeros valores es para el lado y abajo, el 
+  tercer valor es el difuminado */
+  padding: 10px;
+}
+nav {
+  margin: auto;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: n;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background:rgba(0, 0,0, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 3px;
+  width: 80%;
+  padding:5px ;
+}
+
+footer{
+    grid-area: f;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.s1 {
+  grid-area: s1;
+}
+
+.s2 {
+
+  grid-area: s2;
+}
+
+.s3 {
+ 
+ grid-area: s3;
+}
+
+.s4 {
+ 
+  grid-area: s4;
+}
+
+body {
+  background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),
+  url(desayuno.jpg) no-repeat center center fixed;
+  background-size: cover;;
+ /*  background:linear-gradient( to left,
+     rgba(0,0,0,0.8),rgba(0,0,0,0.1)),
+  url(desayuno.jpg) no-repeat center center fixed;
+  background-size: cover;; */
+  
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 300px 60px repeat(4,1fr) 80px;
+  grid-template-areas: 
+    'h   h   h' 
+    'n   n   n'
+    's1  s1  s1'     
+    's2  s2  s2'    
+    's3  s3  s3'    
+    's4  s4  s4'
+    'f   f   f'    
+  ;
+}
+
+
+.a1{
+
+ border-radius: 20px;
+ padding: 10px;
+ margin: 10px;
+
+ background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+ url(yogur.jpg) no-repeat center center;
+ background-size: cover;
+ backdrop-filter: blur(2px);
+}
+.a1 h1{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+}
+
+.a2{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(smoothie1.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ 
+ }
+ .a2 h1{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+
+ .a3{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(sandwich.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a3 h1{
+   font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a4{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+ url(salmon.jpg) no-repeat center center;
+ background-size: cover;
+ backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a4 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a5{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+ url(tortilla.jpg) no-repeat center center;
+ background-size: cover;
+ backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a5 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a6{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(arooz.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a6 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a7{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(pastel.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a7 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a8{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+ url(brownies.jpg) no-repeat center center;
+ background-size: cover;
+ backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a8 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a9{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(angel.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a9 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a10{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+ url(txakoli.jpg) no-repeat center center;
+ background-size: cover;
+ backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a10 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a11{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(campari.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a11 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+ .a12{
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),
+  url(vermut.jpg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+ }
+ .a12 h1{
+    font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: #000000 solid 5px;
+ }
+p{
+  text-align: justify;
+}
+footer{
+  display: flex;
+  text-align: center;
+  font-family: cursive;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.6);
+  width: 600px;
+  margin: auto;
+  margin-top: 0%;
+}
+.Desayunos{
+  border-radius: 15px;
+  background-color: rgb(241, 158, 33);
+  width: 20vw;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.Platos{
+  border-radius: 15px;
+  width: 20vw;
+  padding: 5px;
+  margin: auto;
+  background-color: rgb(241, 158, 33);
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.Postres{
+  background-color: rgb(241, 158, 33);
+  border-radius: 15px;
+  width: 20vw;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.Bebidas{
+  background-color: rgb(241, 158, 33);
+  border-radius: 15px;
+  width: 20vw;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+article h1{
+  border-radius: 8px;
+  width: 38vw;
+  padding-top: 20px;
+  margin: auto;
+}
+article p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+
+
+
